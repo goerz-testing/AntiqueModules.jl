@@ -1,0 +1,6 @@
+[deps]
+AntiqueModules = "f8c93c95-9fc2-4986-b3a9-1e35bea4f6b8"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+
+[sources]
+AntiqueModules = {path = ".."}

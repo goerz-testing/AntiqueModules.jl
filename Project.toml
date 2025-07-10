@@ -1,0 +1,7 @@
+name = "AntiqueModules"
+uuid = "f8c93c95-9fc2-4986-b3a9-1e35bea4f6b8"
+authors = ["Michael Goerz <mail@michaelgoerz.net>"]
+version = "0.1.0-dev"
+
+[compat]
+julia = "1.11"
