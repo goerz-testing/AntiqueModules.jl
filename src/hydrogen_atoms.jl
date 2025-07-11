@@ -1,5 +1,6 @@
 module HydrogenAtoms
 
+import ..AbstractModel
 import ..eigenvalue
 
 export HydrogenAtom, eigenvalue
@@ -17,7 +18,7 @@ export HydrogenAtom, eigenvalue
 * `hbar` (`ħ`): …
 
 """
-struct HydrogenAtom
+struct HydrogenAtom <: AbstractModel
     Z::Int64
     m_e::Float64
     a_0::Float64
@@ -57,7 +58,6 @@ end
 function Base.propertynames(H::HydrogenAtom)
     return (:Z, :m_e, :a_0, :E_h, :hbar, :mₑ, :a₀, :Eₕ, :ħ)
 end
-
 
 @doc raw"""
     eigenvalue(model::HydrogenAtom; n::Int=1)
