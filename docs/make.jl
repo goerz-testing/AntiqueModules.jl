@@ -11,7 +11,11 @@ GITHUB = "https://github.com/goerz-testing/AntiqueModules.jl"
 
 println("Starting makedocs")
 
-PAGES = ["Home" => "index.md", "API" => "api.md"]
+PAGES = [
+    "Home" => "index.md",
+    "Models" => ["Hydrogen Atom" => "hydrogen_atom.md"],
+    "API" => "api.md"
+]
 
 makedocs(;
     authors = AUTHORS,
