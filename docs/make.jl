@@ -1,5 +1,6 @@
 using AntiqueModules
 using Documenter
+using DocumenterPages: PageNode
 import Pkg
 
 
@@ -13,7 +14,7 @@ println("Starting makedocs")
 
 PAGES = [
     "Home" => "index.md",
-    "Models" => ["Hydrogen Atom" => "hydrogen_atom.md"],
+    PageNode("Models" => "models.md", ["Hydrogen Atom" => "models/hydrogen_atom.md"]),
     "API" => "api.md"
 ]
 

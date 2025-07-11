@@ -28,7 +28,7 @@ function Base.show(io::IO, model::T) where {T<:AbstractModel}
 end
 
 
-include("hydrogen_atoms.jl")
+include("models/HydrogenAtoms.jl")
 using .HydrogenAtoms: HydrogenAtom
 export HydrogenAtom
 
